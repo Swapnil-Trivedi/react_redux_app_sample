@@ -1,6 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { useSelector } from 'react-redux';
 
 export class Navbar extends Component {
+
+  //get amount from useSelector
+  amount=useSelector(state=>state.amount);
+
   render() {
     return (
         <>
@@ -20,7 +25,7 @@ export class Navbar extends Component {
               </li>
             </ul>
             <div>
-                <button disabled={true} className="btn btn-primary">Your Balance : 0</button>
+                <button disabled={true} className="btn btn-primary">Your Balance : {this.amount}</button>
             </div>
           </div>
         </div>

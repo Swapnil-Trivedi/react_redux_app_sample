@@ -3,6 +3,7 @@ import { combineReducers } from "redux";
 import amountReducer from "./amountReducer";
 
 const reducers=combineReducers({
+    //this is the state we will use later
     amount: amountReducer
 })
 
