@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Shop from './components/Shop';
