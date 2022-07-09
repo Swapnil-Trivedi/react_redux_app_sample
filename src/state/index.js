@@ -1,2 +1,3 @@
 //to get all action creators
-export * as actionCreators from "./action-creators/index";
+import * as actionCreators from "./action-creators/index";
+export default actionCreators
